@@ -1,0 +1,30 @@
+.counter {
+	display: grid;
+	place-items: center;
+}
+
+.counter-message {
+	text-align: center;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	margin-top: 500px;
+}
+.my-thing {
+	margin-top: 500px;
+	background-color: black;
+	width: 50vw;
+	height: 50vh;
+}
+.mainBody {
+
+	/*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,84,166,1) 0%, rgba(132,189,201,1) 90% );*/
+	background-color: #240F52;
+	background-image: linear-gradient(0deg, #36295e, #1c1045);
+	overflow: hidden;
+	width: 100%;
+	height: 3000px;
+}
+
+
+
