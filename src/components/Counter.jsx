@@ -27,6 +27,7 @@ export default function Counter({ children, count: initialCount }) {
 	// api.stop();
 
 
+
 	//setTimeout(()=>setAnim(true),1500)
 	return (
 		<ParallaxProvider>
