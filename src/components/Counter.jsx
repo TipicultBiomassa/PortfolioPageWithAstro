@@ -26,8 +26,6 @@ export default function Counter({ children, count: initialCount }) {
 	console.log(isNextSlide)
 	// api.stop();
 
-
-
 	//setTimeout(()=>setAnim(true),1500)
 	return (
 		<ParallaxProvider>
