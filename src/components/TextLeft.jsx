@@ -39,7 +39,6 @@ export default function TextLeft ({isNextSlide}) {
     //     } });
 
 
-
     // if (isNextSlide){
     //     springProps2 = useSpring({
     //         opacity: 1,
