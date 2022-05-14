@@ -2,7 +2,8 @@ import React, {useEffect, useState} from 'react';
 import cx from 'classnames';
 import {Parallax, useParallax} from 'react-scroll-parallax';
 import ProfilePate from "../../public/IMG_20211029_225833.jpg"
-import ReactIcon from "../../public/ReactIcon.png"
+import ReactIcon from "../../public/react.png"
+import SvelteIcon from "../../public/svelte.png"
 const shared =
     'absolute bg-blue-100 border-2 border-blue-500 border-solid rounded-lg h-20 w-20 flex items-center justify-center';
 
@@ -52,7 +53,7 @@ export default function InnerComponent ({setNextSlide}){
                                 'bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2'
                             )}
                         >
-                            💰
+                            <div className="absolute"> <img src={SvelteIcon} alt="" /></div>
                         </div>
                         <div
                             className={cx(
