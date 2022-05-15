@@ -19,7 +19,11 @@ export default function Counter({ children, count: initialCount }) {
 	const [isNextSlide, setNextSlide] = useState(false);
 	//setInterval(()=>console.log(scrollProgress),1500);
 	// const initialDelay = useRef(true);
-
+	useEffect(()=>{
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		}
+	},[])
 	// const [isAnimationOver, setAnim] = useState(false);
 	const [styles, api] = useSpring((number,index) => ({ opacity: 1}));
 	api.stop();
@@ -103,7 +107,7 @@ export default function Counter({ children, count: initialCount }) {
 					<video autoPlay loop muted style={{width:'10rem', height:'10rem'}}>
 						<source src={HitMeUp} type={'video/webm'} codecs="vp8"/>
 					</video>
-					<img alt='' src={github} style={{width:'5rem'}}/>
+					<a href={'https://github.com/TipicultBiomassa'}><img alt='' src={github} style={{width:'5rem'}} /></a>
 				</div>
 			</div>
 		</ParallaxProvider>
