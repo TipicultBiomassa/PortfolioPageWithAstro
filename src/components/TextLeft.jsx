@@ -99,7 +99,7 @@ export default function TextLeft ({isNextSlide}) {
               </video>
           </animated.div>
             <animated.div style={{...springProps2}} className={"text-block2 w-96 flex items-center"} >
-                Built a metaverse platform. Simmilar to Zoom but with features using Phaser3 and React. Made most of frontend side. Choosed architecture and built app from the ground up.
+                Built a metaverse platform. Simmilar to Zoom but with game features using Phaser3 and React. Made most of frontend side. Choosed architecture and built app from the ground up.
                 <video ref={refSmirk} autoPlay muted loop style={{width:'5rem',height:'5rem'}}>
                     <source src={SmirkVideo} type={'video/webm'} codecs="vp8"/>
                 </video>

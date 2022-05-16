@@ -34,7 +34,7 @@ function Cloud({ count = 4, radius = 20 }) {
         ['Kotlin', 'HTML5', 'Phaser3', 'Vite', 'Rollup', 'Docker', 'ClickHouse', 'Figma'],
         ['TensorFlow', 'Keras', 'Pandas', 'Neural networks', 'YouTrack', 'Jira', 'Tailwind', 'BEM'],
         ['UE5', 'Babel', 'npm', 'Sass', 'Jest', 'Playwright', 'NightWatch', 'Selenium'],
-        ['WebPack', 'yarn', 'flask', 'Linux', 'SQLite', 'ThreeJS', 'Parcel','aa'],
+        ['WebPack', 'yarn', 'flask', 'Linux', 'SQLite', 'ThreeJS', 'Parcel','NuxtJS'],
     ]
     // Create a count x count random words with spherical distribution
     const words = useMemo(() => {

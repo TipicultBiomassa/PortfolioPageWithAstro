@@ -17,6 +17,9 @@ export default function Counter({ children, count: initialCount }) {
 	const [scrollProgress, setScrollProgress] = useState(0);
 	const [globalScroll, setGlobalScroll] = useState(0);
 	const [isNextSlide, setNextSlide] = useState(false);
+
+
+
 	//setInterval(()=>console.log(scrollProgress),1500);
 	// const initialDelay = useRef(true);
 	useEffect(()=>{
@@ -48,6 +51,7 @@ export default function Counter({ children, count: initialCount }) {
 			// camera.position.y = -scrollProgress * 130;
 		})
 	}
+
 	return (
 		<ParallaxProvider>
 			{/*{!isNextSlide ? <></> : <Mount isNextSlide={isNextSlide} />}*/}
@@ -79,7 +83,7 @@ export default function Counter({ children, count: initialCount }) {
 					<Cloud position={[5* scrollProgress*10, 12, 60]} speed={0.2} opacity={0.2} />
 					<Cloud position={[5, 35 + scrollProgress*2, 20]} speed={0.2} opacity={0.2} />
 				</Suspense>
-				{/*<Sky azimuth={0.4} opacity={0} turbidity={10} elevation={1} rayleigh={0.5} inclination={0.6} distance={1000} />*/}
+				<Sky azimuth={0.4} opacity={0} turbidity={10} elevation={1} rayleigh={0.5} inclination={0.6} distance={1000} />
 				<Rig />
 			</Canvas>
 			<div className="dummy">
